@@ -105,11 +105,24 @@ button:hover{
     padding: 20px;
 }
 
+a{
+    display: inline-block;
+    text-align: center;
+    margin: 0 auto;
+    background-color: gray;
+    border: 2px solid black;
+    color: black;
+    box-shadow: 5px 5px 8px black;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+}
 .cerrarModal{
     display: inline-block;
     text-align: center;
     margin: 0 auto;
     background-color: black;
+    box-shadow: 5px 5px 8px black;
     border: 2px solid gray;
     color: red;
     padding: 20px;
