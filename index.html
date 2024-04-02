@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plantilla Reposicion - TodoSmrt</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer type="text/javascript" src="/main.js"></script>
+</head>
+<body>
+    <main class="container">
+        <div class="formulario">
+            <div class="encabezado">
+                <h1>CUESTIONARIO PARA REPONER CHIPS A CLIENTES TUENTI</h1>
+                <h3>Obligatorio antes de acudir a TUENTIMAN</h2>
+            </div>
+            <form id="infoCliente">
+                <div class="centralBox">
+                    <label for="minCliente" class="etiquetas">Ingresa el numero celular del cliente a reponer:</label>
+                    <input required class="inforCliente" type="text" name="minCliente">
+                </div>
+                <div class="centralBox">
+                    <h2>Has enviado SMS este mes ???</h2><br>
+                    <span>En verdad utilizad aun sms???</span><br>
+                    <div>
+                        <!-- <select name="smsEnviado" id=""></select> -->
+                        <label for="answerYes" class="etiquetas">1- Si</label>
+                        <input required type="radio" id="answerYes" name="answerSms" value="Si">
+                        <label for="answerNo" class="etiquetas">2.- No</label>
+                        <input required type="radio" id="answerNo" name="answerSms" value="No">
+                    </div>
+                </div>
+                <div class="centralBox">
+                    <h2>Cual fue el COMBO que mas comprastes los ultimos 3 meses ???</h2>
+                    <span>Ese billete vago con el que te alcanzo comprar el combo</span><br>
+                    <select  class="inforCliente name="comboFrecuente" id="optionCombo">
+                        <option selected>Selecciona un Combo</option>
+                        <option value="a) Combo de $4" name="comboFrecuente" >Combo de $4</option>
+                        <option value="b) Combo de $7" name="comboFrecuente" >Combo de $7</option>
+                        <option value="c) Combo de $8" name="comboFrecuente" >Combo de $8</option>
+                        <option value="d) Combo de $10" name="comboFrecuente" >Combo de $10</option>
+                        <option value="e) Combo de $20" name="comboFrecuente" >Combo de $20</option>
+                        <option value="f) Combo de $25" name="comboFrecuente" >Combo de $25</option>
+                    </select>
+                </div>
+                <div class="centralBox">
+                    <h2>Numero frecuente</h2>
+                    <span>El numero al que llamas con locura</span>
+                    <label class="etiquetas" for="numerofrecuente"></label>
+                    <input class="inforCliente" required name="numerofrecuente">
+                </div>
+                    <button type="submit" name="botonEnviar">Copiar Informacion</button>
+            </form>
+        </div>
+        <div class="cajaModal" >
+            <h2>Informacion copiada con Exito</h2>
+            <p>Antes de conectarte con TUENTIMAN, debes estar seguro de que la informacion que estas por enviar sea la correcta</p>
+            <button class="cerrarModal">Cerrar</button>
+            <button class="btnModl" onclick="window.location.href='https:secure.livechatinc.com/licence/6049241/v2/open_chat.cgi'"">ir a TUENTIMAN</button>
+        </div>
+    </main>
+    </body>
+</html>
+
+
