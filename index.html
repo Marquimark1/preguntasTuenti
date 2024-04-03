@@ -8,6 +8,14 @@
     <!-- <script defer type="text/javascript" src="/main.js"></script> -->
 </head>
 <body>
+    <aside class="elementosGraficos">
+        <div>
+            <img class="imagentuenti" src="./img/Logo_Tuenti.png" alt="logo Tuenti">
+        </div>
+        <div>
+            <img class="conejoTuenti" src="./img/conejo_Tuenti.png" alt="Conejo Tuenti">
+        </div>
+    </aside>
     <main class="container">
         <div class="formulario">
             <div class="encabezado">
@@ -21,7 +29,7 @@
                 </div>
                 <div class="centralBox">
                     <h2>Has enviado SMS este mes ???</h2><br>
-                    <span>En verdad utilizad aun sms???</span><br>
+                    <span>En serio utilizas SMS !!!</span><br>
                     <div>
                         <!-- <select name="smsEnviado" id=""></select> -->
                         <label for="answerYes" class="etiquetas">1- Si</label>
@@ -54,12 +62,15 @@
             </form>
         </div>
         <div class="cajaModal" >
-            <h2>Informacion copiada con Exito</h2>
-            <p>Antes de conectarte con TUENTIMAN, debes estar seguro de que la informacion que estas por enviar sea la correcta</p>
-            <button class="cerrarModal">Cerrar</button>
-            <a class="btnModl" href="https://secure.livechatinc.com/licence/6049241/v2/open_chat.cgi">ir a TUENTIMAN</a>
+            <h2>Informacion respaldada con Exito</h2>
+            <p>Antes de conectarte con TUENTIMAN, debes estar seguro de que la informacion que respaldastes es la correcta.</p>
+            <button class="cerrarModal">Volver</button>
+            <a class="btnModl" href="https://secure.livechatinc.com/licence/6049241/v2/open_chat.cgi">Con TUENTIMAN</a>
         </div>
     </main>
+    <footer>
+        <p class="footerWeb">Desarrollado por Tarsisinvest S.A</p>
+    </footer>
     </body>     
 </html>
 
@@ -85,7 +96,6 @@
             alert('Error al copiar al portapapeles:', err)
             // console.error('Error al copiar al portapapeles:', err)
         })
-
     }
 
     function cajaModal(){
@@ -97,9 +107,6 @@
             cajaModal.setAttribute('style','display: none');
             inCliente.setAttribute('style', 'visibility: visible');
         })
-
-        // cerrarModal.
     }
-
 </script>
 
