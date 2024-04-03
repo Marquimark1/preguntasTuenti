@@ -8,55 +8,54 @@
     <!-- <script defer type="text/javascript" src="/main.js"></script> -->
 </head>
 <body>
-    <aside class="elementosGraficos">
-        <div>
-            <img class="logoTodosmrt" src="./img/logoTodosmart.png" alt="logo Tuenti">
-        </div>
-    </aside>
     <main class="container">
-        <div class="formulario">
-            <div class="encabezado">
-                <h1>CUESTIONARIO PARA REPONER CHIPS A CLIENTES TUENTI</h1>
-                <h3>Obligatorio antes de acudir a TUENTIMAN</h2>
+        <aside class="elementosGraficos">
+            <div>
+               <img class="logoTodosmrt" src="./img/logoTodosmart.png" alt="logo Tuenti"></a>
             </div>
-            <form id="infoCliente">
-                <div class="centralBox">
-                    <label for="minCliente" class="etiquetas"><b>Ingresa el numero a RECUPERAR:</b></label>
-                    <input required class="inforCliente" type="text" name="minCliente">
+        </aside>  <div class="formulario">
+        <div class="encabezado">
+            <h1>CUESTIONARIO PREVIO PARA REPONER CHIPS</h1>
+            <h5>Obligatorio antes de ir con un TUENTIMAN</h5>
+        </div>
+        <form id="infoCliente">
+            <div class="centralBox">
+                <label for="minCliente" class="etiquetas"><b>Ingresa el numero a RECUPERAR:</b></label>
+                <input required class="inforCliente" type="text" name="minCliente">
+            </div>
+            <div class="centralBox">
+                <h2>Has enviado SMS este mes ???</h2>
+                <h5><b>Es en serio???, todavia utilizando SMS</b></h5>
+                <div>
+                    <!-- <select name="smsEnviado" id=""></select> -->
+                    <label for="answerYes" class="etiquetas">1- Si</label>
+                    <input required type="radio" id="answerYes" name="answerSms" value="Si">
+                    <label for="answerNo" class="etiquetas">2.- No</label>
+                    <input required type="radio" id="answerNo" name="answerSms" value="No">
                 </div>
-                <div class="centralBox">
-                    <h2>Has enviado SMS este mes ???</h2>
-                    <span>En serio utilizas SMS !!!</span>
-                    <div>
-                        <!-- <select name="smsEnviado" id=""></select> -->
-                        <label for="answerYes" class="etiquetas">1- Si</label>
-                        <input required type="radio" id="answerYes" name="answerSms" value="Si">
-                        <label for="answerNo" class="etiquetas">2.- No</label>
-                        <input required type="radio" id="answerNo" name="answerSms" value="No">
-                    </div>
-                </div>
-                <div class="centralBox">
-                    <h2>Cual fue el COMBO que mas comprastes los ultimos 3 meses ???</h2>
-                    <span>Ese billete vago con el que te alcanzo comprar el combo</span><br>
-                    <select  class="inforCliente" name="comboFrecuente" id="optionCombo">
-                        <option selected >Combo de...</option>
-                        <option value="a) Combo de $4">Combo de $4</option>
-                        <option value="b) Combo de $7">Combo de $7</option>
-                        <option value="c) Combo de $8">Combo de $8</option>
-                        <option value="d) Combo de $10">Combo de $10</option>
-                        <option value="e) Combo de $20">Combo de $20</option>
-                        <option value="f) Combo de $25">Combo de $25</option>
-                        <option value="g) Ninguno">Ningun Combo</option>
-                    </select>
-                </div>
-                <div class="centralBox">
-                    <h2>Numero frecuente</h2>
-                    <span>El numero al que llamas con locura</span>
-                    <label class="etiquetas" for="numerofrecuente"></label>
-                    <input class="inforCliente" required name="numerofrecuente">
-                </div>
-                    <button type="submit" name="botonEnviar">Copiar Informacion</button>
-            </form>
+            </div>
+            <div class="centralBox">
+                <h2>Cual fue el COMBO que mas comprastes los ultimos 3 meses ???</h2>
+                <h5><b>Ese billete vago con el que completastes para comprar el combo</b></h5><br>
+                <select  class="inforCliente" name="comboFrecuente" id="optionCombo">
+                    <option selected >Combo de...</option>
+                    <option value="a) Combo de $4">Combo de $4</option>
+                    <option value="b) Combo de $7">Combo de $7</option>
+                    <option value="c) Combo de $8">Combo de $8</option>
+                    <option value="d) Combo de $10">Combo de $10</option>
+                    <option value="e) Combo de $20">Combo de $20</option>
+                    <option value="f) Combo de $25">Combo de $25</option>
+                    <option value="g) Ninguno">Ningun Combo</option>
+                </select>
+            </div>
+            <div class="centralBox">
+                <h2>Numero frecuente</h2>
+                <h5><b>El numero al que llamas con locura - posiblemente toxic@</b></h5>
+                <label class="etiquetas" for="numerofrecuente"></label>
+                <input class="inforCliente" required name="numerofrecuente">
+            </div>
+                <button type="submit" name="botonEnviar">Copiar Informacion</button>
+        </form>
         </div>
         <div class="cajaModal" >
             <h2>Informacion respaldada con Exito</h2>
@@ -64,11 +63,11 @@
             <button class="cerrarModal">Volver</button>
             <a class="btnModl" href="https://secure.livechatinc.com/licence/6049241/v2/open_chat.cgi">ir a tuentiman</a>
         </div>
+        <footer>
+            <p class="footerWeb">Desarrollado por Tarsisinvest S.A</p>
+        </footer>
+        </body>     
     </main>
-    <footer>
-        <p class="footerWeb">Desarrollado por Tarsisinvest S.A</p>
-    </footer>
-    </body>     
 </html>
 
 <script>    
