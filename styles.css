@@ -56,6 +56,10 @@ h1,h2,label{
     font-weight: 600;
 }
 
+h5{
+    text-align: center;
+}
+
 span{
     display: block;
     margin: 10px;    
