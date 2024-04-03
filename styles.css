@@ -14,10 +14,8 @@ body{
 
 .logoTodosmrt{
     display: block;
-    /* position: absolute; */
-    /* right: 100px; */
     margin: 5px auto;
-    width: 100px;
+    width: 50px;
 }
 
 .encabezado{
