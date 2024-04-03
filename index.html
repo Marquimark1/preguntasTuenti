@@ -24,7 +24,7 @@
                 <label for="nombreCliente" "><b>Nombre:</b></label>
                 <input required class="inforEncabezado" type="text" name="nombreCliente"><br>
                 <label for="IdCliente" class="etiquetas"><b>Cedula:</b></label>
-                <input required class="inforEncabezado" type="text" name="idClienteminCliente"><br>
+                <input required class="inforEncabezado" type="text" name="idCliente"><br>
                 <label for="minCliente" class="etiquetas"><b>Numero a RECUPERAR:</b></label>
                 <input required class="inforEncabezado" type="text" name="minCliente">
             </div>
@@ -146,6 +146,7 @@
 
         navigator.clipboard.writeText(`
         
+
         nombre: ${form.get('nombreCliente')}
         cedula: ${form.get('idCliente')};
         Número : ${form.get('minCliente')}
