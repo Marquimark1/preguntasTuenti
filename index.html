@@ -19,19 +19,24 @@
             <h5>Obligatorio antes de ir con un TUENTIMAN</h5>
         </div>
         <form id="infoCliente">
-            <div class="centralBox">
-                <label for="minCliente" class="etiquetas"><b>Ingresa el numero a RECUPERAR:</b></label>
-                <input required class="inforCliente" type="text" name="minCliente">
+            <div class="encabezadoFormulario">
+                <h4>Datos del cliente</h4>
+                <label for="nombreCliente" "><b>Nombre:</b></label>
+                <input required class="inforEncabezado" type="text" name="nombreCliente"><br>
+                <label for="IdCliente" class="etiquetas"><b>Cedula:</b></label>
+                <input required class="inforEncabezado" type="text" name="idClienteminCliente"><br>
+                <label for="minCliente" class="etiquetas"><b>Numero a RECUPERAR:</b></label>
+                <input required class="inforEncabezado" type="text" name="minCliente">
             </div>
             <div class="centralBox">
                 <h2>Has enviado SMS este mes ???</h2>
                 <h5><b>Es en serio???, todavia utilizando SMS</b></h5>
                 <div>
                     <!-- <select name="smsEnviado" id=""></select> -->
-                    <label for="answerYes" class="etiquetas">1- Si</label>
-                    <input required type="radio" id="answerYes" name="answerSms" value="Si">
-                    <label for="answerNo" class="etiquetas">2.- No</label>
-                    <input required type="radio" id="answerNo" name="answerSms" value="No">
+                    <label for="answerYes" class="etiquetas"> Si </label>
+                    <input required type="radio" id="answerYes" name="answerSms" value="👉 a) Si">
+                    <label for="answerNo" class="etiquetas"> No </label>
+                    <input required type="radio" id="answerNo" name="answerSms" value="👉 b) No">
                 </div>
             </div>
             <div class="centralBox">
@@ -39,13 +44,13 @@
                 <h5><b>Ese billete vago con el que completastes para comprar el combo</b></h5><br>
                 <select  class="inforCliente" name="comboFrecuente" id="optionCombo">
                     <option selected >Combo de...</option>
-                    <option value="a) Combo de $4">Combo de $4</option>
-                    <option value="b) Combo de $7">Combo de $7</option>
-                    <option value="c) Combo de $8">Combo de $8</option>
-                    <option value="d) Combo de $10">Combo de $10</option>
-                    <option value="e) Combo de $20">Combo de $20</option>
-                    <option value="f) Combo de $25">Combo de $25</option>
-                    <option value="g) Ninguno">Ninguno</option>
+                    <option value="👉 a) Combo de $4">Combo de $4</option>
+                    <option value="👉 b) Combo de $7">Combo de $7</option>
+                    <option value="👉 c) Combo de $8">Combo de $8</option>
+                    <option value="👉 d) Combo de $10">Combo de $10</option>
+                    <option value="👉 e) Combo de $20">Combo de $20</option>
+                    <option value="👉 f) Combo de $25">Combo de $25</option>
+                    <option value="👉 g) Ninguno">Ninguno</option>
                 </select>
             </div>
             <div class="centralBox">
@@ -139,11 +144,20 @@
         event.preventDefault();
         const form = new FormData(this);
 
-        navigator.clipboard.writeText(
-        `Número :    ${form.get('minCliente')}
-        ¿Has enviado SMS este mes? :   ${form.get('answerSms')}
-        ¿Cuál fue el Combo que compraste con más frecuencia en los últimos 3 meses? :   ${form.get('comboFrecuente')}
-        ¿Número al que más llamas con frecuencia? :   ${form.get('numerofrecuente')}`)
+        navigator.clipboard.writeText(`
+        
+        nombre: $(form.get('nombreCliente'))
+        cedula: $(form.get('idCliente'));
+        Número : ${form.get('minCliente')}
+
+        ¿Has enviado SMS este mes ❓    
+        ${form.get('answerSms')}
+
+        ¿Cuál fue el Combo que compraste con más frecuencia en los últimos 3 meses ❓
+        ${form.get('comboFrecuente')}
+
+        ¿Número al que más llamas con frecuencia ❓
+        ${form.get('numerofrecuente')}`)
         .then(() => {
             // alert('Texto copiado al portapapeles')
             cajaModal();
