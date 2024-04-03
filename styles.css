@@ -17,7 +17,7 @@ body{
     /* position: absolute; */
     /* right: 100px; */
     margin: 5px auto;
-    width: 200px;
+    width: 150px;
 }
 
 .encabezado{
@@ -48,7 +48,7 @@ body{
     margin-top: 5px;
     background-color: white;    
     border-radius: 15px;
-    padding: 5px;
+    padding: 10px;
 }
 
 h1,h2,label{
