@@ -81,10 +81,10 @@
         const form = new FormData(this);
 
         navigator.clipboard.writeText(
-        `Número : ${form.get('minCliente')}
-        ¿Has enviado SMS este mes? : ${form.get('answerSms')}
-        ¿Cuál fue el Combo que compraste con más frecuencia en los últimos 3 meses? : ${form.get('comboFrecuente')}
-        ¿Número al que más llamas con frecuencia? : ${form.get('numerofrecuente')}`)
+        `Número :    ${form.get('minCliente')}
+        ¿Has enviado SMS este mes? :   ${form.get('answerSms')}
+        ¿Cuál fue el Combo que compraste con más frecuencia en los últimos 3 meses? :   ${form.get('comboFrecuente')}
+        ¿Número al que más llamas con frecuencia? :   ${form.get('numerofrecuente')}`)
         .then(() => {
             // alert('Texto copiado al portapapeles')
             cajaModal();
