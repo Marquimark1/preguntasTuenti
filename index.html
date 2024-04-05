@@ -3,65 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Plantilla Reposicion - TodoSmrt</title>
-    <link rel="stylesheet" href="styles.css">
-    <!-- <script defer type="text/javascript" src="/main.js"></script> -->
+    <title>Primer Contacto Tuentiman</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script defer type="text/javascript" src="./main.js"></script>
 </head>
 <body>
-    <main class="container">
-        <aside class="elementosGraficos">
-            <div>
-               <img class="logoTodosmrt" src="./img/logoTodosmart.png" alt="logoTodosmart"></a>
+    <div class="container">
+        <header class="encabezado">
+            <div class="encabezado_logoTodosmrt">
+                <img src="./img/logoTodosmart.png" alt="">
             </div>
-        </aside>  <div class="formulario">
-        <div class="encabezado">
-            <h1>CUESTIONARIO PREVIO PARA REPONER CHIPS</h1>
-            <h5>Obligatorio antes de ir con un TUENTIMAN</h5>
-        </div>
-        <form id="infoCliente">
-            <div class="encabezadoFormulario">
-                <h4>Datos del cliente</h4>
-                <label for="nombreCliente" "><b>Nombre:</b></label>
-                <input required class="inforEncabezado" type="text" name="nombreCliente"><br>
-                <label for="IdCliente" class="etiquetas"><b>Cedula:</b></label>
-                <input required class="inforEncabezado" type="text" name="idCliente"><br>
-                <label for="minCliente" class="etiquetas"><b>Numero a RECUPERAR:</b></label>
-                <input required class="inforEncabezado" type="text" name="minCliente">
+            <div class="encabezado_data">
+                <h1>CUESTIONARIO PREVIO PARA REPONER CHIPS</h1>
+                <h3>Obligatorio antes de ir con un TUENTIMAN</h3>
             </div>
-            <div class="centralBox">
-                <h2>Has enviado SMS este mes ???</h2>
-                <h5><b>Es en serio???, todavia utilizando SMS</b></h5>
-                <div>
-                    <!-- <select name="smsEnviado" id=""></select> -->
-                    <label for="answerYes" class="etiquetas"> Si </label>
+        </header>
+        <main class="dataFormulario">
+            <form id="formdataCliente">
+                <div class="infoCliente">
+                    <input required type="text" name="nombresCliente">
+                    <label class="etiquetas">Nombre del Cliente</label>
+                </div>
+                <div class="infoCliente">
+                    <input required type="text" name="documentoIndentidad">
+                    <label class="etiquetas">Numero de Identidad</label>
+                </div>
+                <div class="infoCliente">
+                    <input required type="text" name="minCliente">               
+                    <label class="etiquetas">Numero Celular</label>
+                </div>
+                <div class="infoCliente">
+                    <input required type="text" name="iccNueva">
+                    <label class="etiquetas">Icc Nueva</label>
+                </div>    
+                <div class="smsEnvio">
+                    <p class="smsAnswer">Has enviado SMS este mes ?</p>
+                    <span class="etiquetas_texto"> Si </span>
                     <input required type="radio" id="answerYes" name="answerSms" value="👉 a) Si">
-                    <label for="answerNo" class="etiquetas"> No </label>
+                    <span class="etiquetas_texto"> No </span>
                     <input required type="radio" id="answerNo" name="answerSms" value="👉 b) No">
                 </div>
-            </div>
-            <div class="centralBox">
-                <h2>Cual fue el COMBO que mas comprastes los ultimos 3 meses ???</h2>
-                <h5><b>Ese billete vago con el que completastes para comprar el combo</b></h5><br>
-                <select  class="inforCliente" name="comboFrecuente" id="optionCombo">
-                    <option selected >Combo de...</option>
-                    <option value="👉 a) Combo de $4">Combo de $4</option>
-                    <option value="👉 b) Combo de $7">Combo de $7</option>
-                    <option value="👉 c) Combo de $8">Combo de $8</option>
-                    <option value="👉 d) Combo de $10">Combo de $10</option>
-                    <option value="👉 e) Combo de $20">Combo de $20</option>
-                    <option value="👉 f) Combo de $25">Combo de $25</option>
-                    <option value="👉 g) Ninguno">Ninguno</option>
-                </select>
-            </div>
-            <div class="centralBox">
-                <h2>Numero frecuente</h2>
-                <h5><b>El numero al que llamas con locura - posiblemente toxic@</b></h5>
-                <label class="etiquetas" for="numerofrecuente"></label>
-                <input class="inforCliente" required name="numerofrecuente">
-            </div>
-                <button type="submit" name="botonEnviar">Copiar Informacion</button>
-        </form>
-        </div>
+                <div class="comboCompra">
+                    <p class="combos">Cual fue el COMBO que mas comprastes los ultimos 3 meses ?</p>
+                    <select class="frecuenteCombo" name="comboFrecuente">
+                        <option selected>Escoge el Combo...</option>
+                        <option value="👉 a) Combo de $ 4">Combo $ 4</option>
+                        <option value="👉 b) Combo de $ 7">Combo $ 7</option>
+                        <option value="👉 c) Combo de $ 8">Combo $ 8</option>
+                        <option value="👉 d) Combo de $ 10">Combo $ 10</option>
+                        <option value="👉 e) Combo de $ 20">Combo $ 20</option>
+                        <option value="👉 f) Combo de $ 25">Combo $ 25</option>
+                        <option value="👉 g)Ninguno">Ninguno</option>
+                    </select>
+                </div>
+                <div class="numeroFrecuente">
+                    <label class="etiquetas_frecuente"><span class="etiquetas_texto_frecuente">Numero al que mas llamas con frecuencia?</span></label><br>    
+                    <input required name="numFrecuente" type="text"><br>
+                </div>
+                <button class="btnForm" type="submit">Respaldar Informacion</button>
+            </form>
+        </main>
         <div class="cajaModal" >
             <h2>Informacion respaldada con Exito</h2>
             <p>Antes de conectarte con TUENTIMAN, debes estar seguro de que la informacion que respaldastes es la correcta.</p>
@@ -69,114 +70,9 @@
             <a class="btnModl" href="https://secure.livechatinc.com/licence/6049241/v2/open_chat.cgi">ir a tuentiman</a>
         </div>
         <footer>
-            <p class="footerWeb">Desarrollado por Tarsisinvest S.A</p>
+            <p>Desarrollado por Tarsisinvest S.A </p>
         </footer>
-        </body>     
-    </main>
+    </div>
+    
+</body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<script>    
-    const inCliente = document.querySelector("#infoCliente");
-
-    inCliente.addEventListener('submit',envioInformacion);
-
-    function envioInformacion(event){
-        event.preventDefault();
-        const form = new FormData(this);
-
-        navigator.clipboard.writeText(`
-        
-
-        nombre: ${form.get('nombreCliente')}
-        cedula: ${form.get('idCliente')};
-        Número : ${form.get('minCliente')}
-
-        ¿Has enviado SMS este mes ❓    
-        ${form.get('answerSms')}
-
-        ¿Cuál fue el Combo que compraste con más frecuencia en los últimos 3 meses ❓
-        ${form.get('comboFrecuente')}
-
-        ¿Número al que más llamas con frecuencia ❓
-        ${form.get('numerofrecuente')}`)
-        .then(() => {
-            // alert('Texto copiado al portapapeles')
-            cajaModal();
-        })
-        .catch(err => {
-            alert('Error al copiar al portapapeles:', err)
-            // console.error('Error al copiar al portapapeles:', err)
-        })
-    }
-
-    function cajaModal(){
-        const cajaModal = document.querySelector('.cajaModal');
-        cajaModal.setAttribute('style', 'display: block');
-        const cerrarModal = document.querySelector('.cerrarModal');
-        inCliente.setAttribute('style', 'visibility: hidden');
-        cerrarModal.addEventListener('click', function(){
-            cajaModal.setAttribute('style','display: none');
-            inCliente.setAttribute('style', 'visibility: visible');
-        })
-    }
-</script>
