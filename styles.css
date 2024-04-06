@@ -73,7 +73,7 @@ body{
     width: 100%;
     height: 80px;
     background: transparent;
-    color: #fff;
+    color: yellowgreen;
     outline: 0;
     font-size: 20px;
     margin: 0 5px;
@@ -86,11 +86,11 @@ body{
     left: 1px;
     width: 100%;
     height: 100%;
-    color: #d6dab2;
+    color: #2ecece;
     transform: translateY(30%);
     font-size: 20px;
     pointer-events: none;
-    transition: .8s ease;
+    transition: .4s ease;
 }
 
  .infoCliente input:focus + .etiquetas,
@@ -99,7 +99,7 @@ body{
     transform: translateY(-10%);   
     font-size: 14px;
     padding: 5px 5px; 
-    color: yellowgreen;
+    color: white;
 } 
 
 .smsEnvio{
@@ -171,7 +171,7 @@ body{
 .numeroFrecuente input{
     background: #0b1721;
     margin: 10px 0;
-    color: white;
+    color: yellowgreen;
     padding: 5px 5px;
     text-align: center;
     border: none;
