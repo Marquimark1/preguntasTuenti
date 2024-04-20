@@ -10,7 +10,6 @@ function recibeInformacion(event){
     nombre : ${formulario.get('nombresCliente')}
     cedula : ${formulario.get('documentoIndentidad')};
     Número : ${formulario.get('minCliente')}
-    Icc    : ${formulario.get('iccNueva')}
 
     🔒 ¿Has enviado SMS este mes ❓   
 
