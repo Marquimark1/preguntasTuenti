@@ -136,7 +136,7 @@ body{
 }
 
 .correoApp p{
-    margin-top: 5px;
+    margin: 5px;
 }
 
 .correoAnswer{
@@ -144,6 +144,7 @@ body{
     text-align: center;
     padding-top: 5px;
     color: #aa1111;
+    font-size: small;
 }
 
 .correoApp input{
