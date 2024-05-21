@@ -7,8 +7,8 @@ function recibeInformacion(event){
     event.preventDefault();
     const formulario = new FormData(this);
     navigator.clipboard.writeText(`
-    nombre : ${formulario.get('nombresCliente')}
-    cedula : ${formulario.get('documentoIndentidad')};
+    Nombre : ${formulario.get('nombresCliente')}
+    Cedula : ${formulario.get('documentoIndentidad')};
     Número : ${formulario.get('minCliente')}
     ${formulario.get('answerTipoSimcard') != "" ? formulario.get('answerTipoSimcard'):"" }
 
