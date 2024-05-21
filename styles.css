@@ -102,7 +102,7 @@ body{
     color: white;
 } 
 
-.smsEnvio{
+/* .smsEnvio{
     margin-top: 10px;
     width: 100%;
     height: 120px;
@@ -112,6 +112,20 @@ body{
 }
 
 .smsEnvio p{
+    margin: 20px auto;
+    font-weight: bolder;
+} */
+
+.tipoSimcard{
+    margin-top: 10px;
+    width: 100%;
+    height: 120px;
+    border-radius: 10px;
+    background-color: #2ecece;
+    text-align: center;
+}
+
+.tipoSimcard p{
     margin: 20px auto;
     font-weight: bolder;
 }
