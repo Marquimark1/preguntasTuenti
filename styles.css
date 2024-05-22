@@ -156,7 +156,7 @@ body{
 .correoAnswer{
     display: block;
     text-align: center;
-    padding-top: 5px;
+    padding: 5px;
     color: #aa1111;
     font-size: small;
 }
