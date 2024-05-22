@@ -150,6 +150,7 @@ body{
 }
 
 .correoApp p{
+    text-align: center;
     margin: 5px;
 }
 
@@ -190,6 +191,7 @@ body{
 
 .combos{
     display: block;
+    text-align: center;
     margin: 20px 0px 10px 20px;
 }
 
