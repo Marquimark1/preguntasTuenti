@@ -248,7 +248,7 @@ footer p{
 .cajaModal{
     display: none;
     position: absolute;
-    top: 20%;
+    top: 50%;
     left: 0px;
     padding: 20px 0 ;
     width: 100%;
