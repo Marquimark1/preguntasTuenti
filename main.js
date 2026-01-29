@@ -7,10 +7,8 @@ function recibeInformacion(event){
     event.preventDefault();
     const formulario = new FormData(this);
     navigator.clipboard.writeText(`
-    
-    Nombres del Cliente : ${formulario.get('nombresCliente')}
-    Cedula del Cliemte: ${formulario.get('documentoIndentidad')};
-    Número : ${formulario.get('minCliente')};
+     
+    Número celular: ${formulario.get('minCliente')};
     Donde te encuentras: ${formulario.get('answerTipoSimcard') != "" ? formulario.get('answerTipoSimcard'):"" };
     Que necesita el Cliente: Requerimiento
     Tipo de Requerimiento: ${formulario.get('tipoRequerimiento')}
@@ -49,3 +47,10 @@ function cajaModal(){
         dataCliente.setAttribute('style', 'visibility: visible');
     })
 }
+
+/*
+
+    Nombres del Cliente : ${formulario.get('nombresCliente')}
+    Cedula del Cliemte: ${formulario.get('documentoIndentidad')};
+
+*/
