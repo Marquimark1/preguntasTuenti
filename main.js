@@ -12,17 +12,13 @@ function recibeInformacion(event){
     Donde te encuentras: ${formulario.get('answerTipoSimcard') != "" ? formulario.get('answerTipoSimcard'):"" };
     Tipo de Requerimiento del cliente: ${formulario.get('tipoRequerimiento')}
     
-    ¿Cual es el correo que esta asociado a tu cuenta APP?   
-    
-    ${formulario.get('correoAsociadoApp')}
+    ¿ Correo de la APP de Tuenti? ${formulario.get('correoAsociadoApp')}
     
     ¿Cuál fue el Combo que compraste con más frecuencia en los últimos 3 meses?    
     
     ${formulario.get('comboFrecuente')}
     
-    ¿Número al que más llamas con frecuencia?
-    
-    ${formulario.get('numFrecuente')}`)
+    ¿Número al que más llamas con frecuencia? ${formulario.get('numFrecuente')}`)
     
     .then(() => {
         // alert('Texto copiado al portapapeles')
