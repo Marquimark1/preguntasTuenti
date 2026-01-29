@@ -9,20 +9,23 @@
 </head>
 <body>
     <div class="container">
-        <header class="encabezado">
-            <div class="encabezado_logoTodosmrt">
-                <img src="./img/logoTodosmart.png" alt="">
-            </div>
             <div class="encabezado_data">
-                <h1>CUESTIONARIO PREVIO PARA REPONER CHIPS</h1>
-                <h3>Obligatorio antes de ir con un TUENTIMAN</h3>
+                <h1>CUESTIONARIO PREVIO PARA REQUERIMIENTOS</h1>
+                <h2>Obligatorio antes de ir con un TUENTIMAN</h2>
             </div>
         </header>
         <main class="dataFormulario">
             <form id="formdataCliente">
+                 <div class="ubicacionEjecutivo">
+                    <p class="smsAnswer">Donde te encuentras en este momento?</p>
+                    <span class="etiquetas_texto"> Isla </span>
+                    <input required type="radio" name="answerTipoSimcard" value="👉 Isla">
+                    <span class="etiquetas_texto"> Calle </span>
+                    <input required type="radio" name="answerTipoSimcard" value="👉 Calle">
+                </div>
                 <div class="infoCliente">
                     <input required type="text" name="nombresCliente">
-                    <label class="etiquetas">Nombre del Cliente</label>
+                    <label class="etiquetas">Nombres del cliente</label>
                 </div>
                 <div class="infoCliente">
                     <input required type="text" name="documentoIndentidad">
@@ -32,24 +35,17 @@
                     <input required type="text" name="minCliente">               
                     <label class="etiquetas">Numero Celular</label>
                 </div>
-                
-                <!-- <div class="infoCliente">
-                    <input type="text" name="iccNueva">
-                    <label class="etiquetas">Icc Nueva</label>
-                </div>     -->
-                <div class="tipoSimcard">
-                    <p class="smsAnswer">Vas a realizar REPOSICION CON E-SIM ?</p>
-                    <span class="etiquetas_texto"> Si </span>
-                    <input required type="radio" name="answerTipoSimcard" value="👉 Favor REPOSICION CON E-SIM">
-                    <span class="etiquetas_texto"> No </span>
-                    <input required type="radio" name="answerTipoSimcard" value="">
+                 <div class="infoCliente">
+                    <input required type="text" name="tipoRequerimiento">               
+                    <label class="etiquetas">Tipo de Requerimiento</label>
                 </div>
+
                 <div class="correoApp">
-                <p>Cual es el correo que esta asociado a tu cuenta APP ?</p>
-                    <span class="correoAnswer">Si no ha descargado la App, o no tiene correo asociado, la respuesta es "No asocie correo"</span>
-                    <label for="correoAsociadoApp"></label>    
-                    <input type="text" id="mailApp" name="correoAsociadoApp">
-                </div>
+                    <p>Cual es el correo que esta asociado a tu cuenta APP ?</p>
+                        <span class="correoAnswer">Si no ha descargado la App, o no tiene correo asociado, la respuesta es "No asocie correo"</span>
+                        <label for="correoAsociadoApp"></label>    
+                        <input type="text" id="mailApp" name="correoAsociadoApp">
+                    </div>
                 <div class="comboCompra">
                     <p class="combos">Cual fue el COMBO que mas comprastes con mas frecuencia en los ultimos 3 meses ?</p>
                     <select class="frecuenteCombo" name="comboFrecuente">
@@ -77,7 +73,7 @@
             <h2>Informacion respaldada con Exito</h2>
             <p>Antes de conectarte con TUENTIMAN, debes estar seguro de que la informacion que respaldastes es la correcta.</p>
             <button class="cerrarModal">Volver</button>
-            <a class="btnModl" href="https://secure.livechatinc.com/licence/6049241/v2/open_chat.cgi">ir a tuentiman</a>
+            <a class="btnModl" href="https://api.whatsapp.com/send/?phone=0958699580">ir a tuentiman</a>
         </div>
         <footer>
             <p>Tarsisinvest S.A © 2025 V 1.1</p>

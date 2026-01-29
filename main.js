@@ -7,11 +7,13 @@ function recibeInformacion(event){
     event.preventDefault();
     const formulario = new FormData(this);
     navigator.clipboard.writeText(`
-    Nombre : ${formulario.get('nombresCliente')}
-    Cedula : ${formulario.get('documentoIndentidad')};
-    Número : ${formulario.get('minCliente')}
-    ${formulario.get('answerTipoSimcard') != "" ? formulario.get('answerTipoSimcard'):"" }
-
+    Nombres del Cliente : ${formulario.get('nombresCliente')}
+    Cedula del Cliemte: ${formulario.get('documentoIndentidad')};
+    Número : ${formulario.get('minCliente')};
+    Donde te encuentras: ${formulario.get('answerTipoSimcard') != "" ? formulario.get('answerTipoSimcard'):"" };
+    Que necesita el Cliente:  👉 Requerimiento
+    Tipo de Requerimiento: ${formulario.get('tipoRequerimiento')}
+        
     🔒 ¿Cual es el correo que esta asociado a tu cuenta APP ❓   
 
     ${formulario.get('correoAsociadoApp')}
