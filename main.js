@@ -7,18 +7,27 @@ function recibeInformacion(event){
     event.preventDefault();
     const formulario = new FormData(this);
     navigator.clipboard.writeText(`
+    
     Nombres del Cliente : ${formulario.get('nombresCliente')}
     Cedula del Cliemte: ${formulario.get('documentoIndentidad')};
     Número : ${formulario.get('minCliente')};
     Donde te encuentras: ${formulario.get('answerTipoSimcard') != "" ? formulario.get('answerTipoSimcard'):"" };
     Que necesita el Cliente: Requerimiento
+
     Tipo de Requerimiento: ${formulario.get('tipoRequerimiento')}
+    
     ¿Cual es el correo que esta asociado a tu cuenta APP?   
+    
     ${formulario.get('correoAsociadoApp')}
+    
     ¿Cuál fue el Combo que compraste con más frecuencia en los últimos 3 meses?    
+    
     ${formulario.get('comboFrecuente')}
+    
     ¿Número al que más llamas con frecuencia?
+    
     ${formulario.get('numFrecuente')}`)
+    
     .then(() => {
         // alert('Texto copiado al portapapeles')
         cajaModal();
