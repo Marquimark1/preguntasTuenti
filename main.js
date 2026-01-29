@@ -10,8 +10,7 @@ function recibeInformacion(event){
      
     Número celular: ${formulario.get('minCliente')};
     Donde te encuentras: ${formulario.get('answerTipoSimcard') != "" ? formulario.get('answerTipoSimcard'):"" };
-    Que necesita el Cliente: Requerimiento
-    Tipo de Requerimiento: ${formulario.get('tipoRequerimiento')}
+    Tipo de Requerimiento del cliente: ${formulario.get('tipoRequerimiento')}
     
     ¿Cual es el correo que esta asociado a tu cuenta APP?   
     
@@ -52,5 +51,6 @@ function cajaModal(){
 
     Nombres del Cliente : ${formulario.get('nombresCliente')}
     Cedula del Cliemte: ${formulario.get('documentoIndentidad')};
+    Que necesita el Cliente: Requerimiento
 
 */
