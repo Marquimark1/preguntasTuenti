@@ -13,7 +13,6 @@ function recibeInformacion(event){
     Número : ${formulario.get('minCliente')};
     Donde te encuentras: ${formulario.get('answerTipoSimcard') != "" ? formulario.get('answerTipoSimcard'):"" };
     Que necesita el Cliente: Requerimiento
-
     Tipo de Requerimiento: ${formulario.get('tipoRequerimiento')}
     
     ¿Cual es el correo que esta asociado a tu cuenta APP?   
