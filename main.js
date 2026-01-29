@@ -8,8 +8,8 @@ function recibeInformacion(event){
     const formulario = new FormData(this);
     navigator.clipboard.writeText(`
      
-    Número celular: ${formulario.get('minCliente')};
-    Donde te encuentras: ${formulario.get('answerTipoSimcard') != "" ? formulario.get('answerTipoSimcard'):"" };
+    Número celular: ${formulario.get('minCliente')}
+    Donde te encuentras: ${formulario.get('answerTipoSimcard') != "" ? formulario.get('answerTipoSimcard'):"" }
     Tipo de Requerimiento del cliente: ${formulario.get('tipoRequerimiento')}
     
     ¿ Correo de la APP de Tuenti? ${formulario.get('correoAsociadoApp')}
