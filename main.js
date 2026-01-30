@@ -12,7 +12,9 @@ function recibeInformacion(event){
 
     ¿Donde te encuentras ?: ${formulario.get('ubicaEjecutivo') != "" ? formulario.get('ubicaEjecutivo'):"" }
     
-    ¿Cual es tu consulta, requerimiento o reclamo del cliente? : ${formulario.get('tipoRequerimiento')}
+    ¿Cual es tu consulta, requerimiento o reclamo del cliente? : 
+    
+    ${formulario.get('tipoRequerimiento')}
     
     ¿ Correo de la APP de Tuenti? : 
     
