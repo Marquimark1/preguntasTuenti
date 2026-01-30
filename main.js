@@ -10,15 +10,15 @@ function recibeInformacion(event){
      
     Número celular: ${formulario.get('minCliente')}
 
-    Donde te encuentras: ${formulario.get('ubicaEjecutivo') != "" ? formulario.get('ubicaEjecutivo'):"" }
+    ¿Donde te encuentras ?: ${formulario.get('ubicaEjecutivo') != "" ? formulario.get('ubicaEjecutivo'):"" }
     
-    Tipo de Requerimiento del cliente: ${formulario.get('tipoRequerimiento')}
+    ¿Cual es tu consulta, requerimiento o reclamo del cliente? : ${formulario.get('tipoRequerimiento')}
     
     ¿ Correo de la APP de Tuenti? : 
     
     ${formulario.get('correoAsociadoApp')}
     
-    ¿Cuál fue el Combo que compraste con más frecuencia en los últimos 3 meses? :    
+    ¿Cuál fue el Combo que compraste con más frecuencia en los últimos 3 meses ? :    
     
     ${formulario.get('comboFrecuente')}
     
