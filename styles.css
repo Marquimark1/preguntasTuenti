@@ -117,6 +117,10 @@ body{
     font-weight: bolder;
 }
 
+.ubicacionEjecutivo .radios{
+    margin: 10px 0;
+}
+
 
 .etiquetas_texto{
     margin: 5px 15px;
