@@ -9,16 +9,16 @@ function recibeInformacion(event){
     navigator.clipboard.writeText(`
      
     Número celular: ${formulario.get('minCliente')}
-    Donde te encuentras: ${formulario.get('answerTipoSimcard') != "" ? formulario.get('answerTipoSimcard'):"" }
+    Donde te encuentras: ${formulario.get('ubicaEjecutivo') != "" ? formulario.get('ubicaEjecutivo'):"" }
     Tipo de Requerimiento del cliente: ${formulario.get('tipoRequerimiento')}
     
-    ¿ Correo de la APP de Tuenti? ${formulario.get('correoAsociadoApp')}
+    ¿ Correo de la APP de Tuenti? : ${formulario.get('correoAsociadoApp')}
     
-    ¿Cuál fue el Combo que compraste con más frecuencia en los últimos 3 meses?    
+    ¿Cuál fue el Combo que compraste con más frecuencia en los últimos 3 meses? :    
     
     ${formulario.get('comboFrecuente')}
     
-    ¿Número al que más llamas con frecuencia? ${formulario.get('numFrecuente')}`)
+    ¿Número al que más llamas con frecuencia? : ${formulario.get('numFrecuente')}`)
     
     .then(() => {
         // alert('Texto copiado al portapapeles')
