@@ -101,14 +101,18 @@ body{
     padding-bottom: 10px;
 }
 
+.radiosTipos{
+    display: flex;
+    flex-direction: row;
+}
+
 .infoClienteDos .radiosTipos{
     margin: 0 15px;
     font-size: 18px;
 }
 
 .infoClienteDos .etiquetas{
-    margin-right: 50px;
-    width: 100%;
+    margin: 0 10px;
     height: 100%;
     color: yellowgreen;
     font-size: 16px;
