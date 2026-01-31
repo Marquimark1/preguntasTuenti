@@ -11,6 +11,8 @@ function recibeInformacion(event){
     Número celular: ${formulario.get('minCliente')}
 
     ¿Donde te encuentras ?: ${formulario.get('ubicaEjecutivo') != "" ? formulario.get('ubicaEjecutivo'):"" }
+
+    ¿Qué necesita el cliente? : ${formulario.get('tipoDeConsulta')}
     
     ¿Cual es tu consulta, requerimiento o reclamo del cliente? : 
     

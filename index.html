@@ -20,28 +20,30 @@
                     <p class="smsAnswer">Donde te encuentras en este momento?</p>
                     <div class="radios">
                         <input required type="radio" name="ubicaEjecutivo" value="Isla">
-                        <span class="etiquetas_texto"> Isla </span>
-                        <span class="etiquetas_texto"> Calle </span>
+                        <span class="etiquetas_texto">Isla </span>
+                        <span class="etiquetas_texto">Calle </span>
                         <input required type="radio" name="ubicaEjecutivo" value="Calle">
                     </div>
                 </div>
-              <!--  <div class="infoCliente">
-                    <input required type="text" name="nombresCliente">
-                    <label class="etiquetas">Nombres del cliente</label>
-                </div>
-                <div class="infoCliente">
-                    <input required type="text" name="documentoIndentidad">
-                    <label class="etiquetas">Numero de Identidad</label>
-                </div> -->
                 <div class="infoCliente">
                     <input required type="text" name="minCliente">               
                     <label class="etiquetas">Numero Celular</label>
                 </div>
+                <div class="infoClienteDos">
+                    <p class="smsAnswer">Que necesita el cliente ?</p>
+                    <div class="radiosTipos">
+                        <input required type="radio" name="tipoDeConsulta" value="consulta">
+                        <span class="etiquetas">Consulta</span>
+                        <input required type="radio" name="tipoDeConsulta" value="requerimiento">
+                        <span class="etiquetas">Requerimiento</span>
+                        <input required type="radio" name="tipoDeConsulta" value="reclamo">
+                        <span class="etiquetas">Reclamo </span>
+                    </div>
+                </div>  
                  <div class="infoCliente">
                     <input required type="text" name="tipoRequerimiento">               
                     <label class="etiquetas">Detalla el Requerimiento del Cliente</label>
-                </div>
-
+                </div> 
                 <div class="correoApp">
                     <p>Cual es el correo que esta asociado a tu cuenta APP ?</p>
                         <span class="correoAnswer">Si no ha descargado la App, o no tiene correo asociado, la respuesta es "No asocié correo"</span>
