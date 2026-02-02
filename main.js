@@ -8,7 +8,7 @@ function recibeInformacion(event){
     const formulario = new FormData(this);
     navigator.clipboard.writeText(`
      
-    Número celular: ${formulario.get('minCliente')}
+    Número celular del Cliente: ${formulario.get('minCliente')}
 
     ¿Donde te encuentras ?: ${formulario.get('ubicaEjecutivo') != "" ? formulario.get('ubicaEjecutivo'):"" }
 
